@@ -6,21 +6,30 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>third week 3-2</title>
+        <title>calculater</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
     </head>
-<body>
-<script type="text/javascript">
-var input = 4;
-for(var i=1;i< 5;i++){
-input = i*input;
-}
-document.write(input);
-</script>
-</body>
+    <body>  
+        <form>
+      <input type="text" id="input1">
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="text" id="input2">
+      <input type="button" id="calc" value="calc" onclick="calculate();">
+      <input type="text" id="output" disabled>
+      <br>
+    </form>
+    <div id="error">
+    </div>
+
+    <script>
+      function calculate(){
+        var input1 = $('#input1').val();
+        var input2 = $('#input2').val();
+    </body>
 </html>
-    
- 
